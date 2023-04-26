@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "versionner-project-sample"
+version = "0.1.0"
+description = "Sample versionner project"
+authors = ["Darren Weber <dweber.consulting@gmail.com>"]
+license = "Apache 2.0"
+readme = "README.md"
+packages = [{include = "sample_lib"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3"
+pytest = "^7.3"
+versionner = "^1.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
